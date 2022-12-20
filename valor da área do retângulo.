@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <stdlib.h> 
+
+	float areaRetangulo(float base, float altura) {
+
+	float area = base * altura;
+
+	return area;
+
+	}
+
+	int main(){
+
+	//float vbase, valtura, varea;
+
+	float base = 10;
+
+	float altura = 5;
+
+	float varea = areaRetangulo(base, altura);
+
+	printf("A area do retangulo e: %.3f \n", varea);
+
+	} 
