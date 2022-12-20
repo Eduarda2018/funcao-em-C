@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+#include <stdlib.h>
+
+cacular_salario_mesal(double horas_trabalhadas, double valor_hora){
+
+	double horas_traba_extra=0;
+
+	double valor_hora_extra=0;
+
+	double total_hora_extra=0;
+
+	double salario_mesal=0;
+
+	if(horas_traba_extra <=160){
+
+		salario_mesal = horas_trabalhadas * valor_hora;
+
+	}else{
+
+		horas_traba_extra=horas_trabalhadas - 160;
+
+		valor_hora_extra=horas_traba_extra*(valor_hora + (valor_hora_extra * 50)/100);
+
+		salario_mesal= valor_hora_extra + (160 * valor_hora);
+
+	}
+
+	return salario_mesal;
+
+}
+
+int main(){
+
+	double horas = 160;
+
+	double valor_hora = 15;
+
+  double salario_mesal = cacular_salario_mesal(horas, valor_hora);
+
+  printf("salario mesal %.3f ", salario_mesal);
+
+ }
