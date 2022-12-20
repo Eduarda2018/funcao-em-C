@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+#include <stdlib.h>
+
+double calcular_valor_fab (double custo_fabrica){
+
+	//double custo_fabrica = 1000;
+
+	double porc_dis = 0;
+
+	double imposto = 0;
+
+	double valor_final = 0;
+
+	porc_dis = (custo_fabrica*28)/100;
+
+	imposto = (custo_fabrica*45)/100;
+
+	valor_final = custo_fabrica + porc_dis + imposto;
+
+	return valor_final;
+
+}
+
+int main(){
+
+	double valor = 1000;
+
+	double retorno = calcular_valor_fab(valor);
+
+	printf("valor final %f: " ,retorno);
+
+}
