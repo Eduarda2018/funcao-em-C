@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+#include <stdlib.h>
+
+calcular_media(float n1, float n2, float n3, float n4){
+
+		float media = (n1+n2+n3+n4)/4;
+
+		if(media >= 6){
+
+			printf("Aluno Aprovado com a media %.2f \n",media);
+
+			}else if(media>=4){
+
+			printf("Aluno em prova final %.2f\n", media);
+
+		}else{
+
+			printf("Aluno Reprovado %.2f\n",media);
+
+			}
+
+};
+
+int main(){
+
+calcular_media(4,4,2,2);
+
+}
+
